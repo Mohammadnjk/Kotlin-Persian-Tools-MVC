@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    tools:context=".controller.ChangeActivity" >
+
+    <EditText
+        android:id="@+id/get_height"
+        android:layout_width="290dp"
+        android:layout_height="62dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:fontFamily="@font/mikhak"
+
+        android:hint="مبلغ(تومان)"
+        android:inputType="textPersonName"
+        android:layoutDirection="rtl"
+        android:paddingTop="10px"
+        android:paddingRight="20px"
+        android:paddingBottom="10px"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/operation_btn"
+        android:textColorHint="@color/calculator_button"
+        android:textColorLink="@color/font_2"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <EditText
+        android:id="@+id/get_profit"
+        android:layout_width="290dp"
+        android:layout_height="62dp"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:fontFamily="@font/mikhak"
+
+        android:hint="درصد نرخ سود (درصد)"
+        android:inputType="textPersonName"
+        android:layoutDirection="rtl"
+        android:paddingTop="10px"
+        android:paddingRight="20px"
+        android:paddingBottom="10px"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/operation_btn"
+        android:textColorHint="@color/calculator_button"
+        android:textColorLink="@color/font_2"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mikhak"
+        android:text="محاسبه نرخ سود سالانه "
+        android:textColor="@color/operation_btn"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/get_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.864" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="184dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/money" />
+
+    <Button
+        android:id="@+id/btn_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sing_button"
+        android:fontFamily="@font/mikhak"
+        android:text="محاسبه "
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:onClick="showResult"
+        />
+
+    <TextView
+        android:id="@+id/profit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mikhak"
+        android:text="سود ماهانه :"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/get_height"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <TextView
+        android:id="@+id/show_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mikhak"
+        android:textColor="@color/text_view"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/get_height"
+        app:layout_constraintVertical_bias="0.818"
+        tools:text="show result" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

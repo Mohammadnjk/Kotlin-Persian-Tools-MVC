@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kotlin.persian_tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.9caculator">
+        <activity
+            android:name=".BaceActivity"
+            android:exported="true"
+            android:label="@string/title_activity_bace"
+            android:theme="@style/Theme.9caculator.NoActionBar" />
+        <activity
+            android:name="com.kotlin.persian_tools.controller.CountryNumberActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.kotlin.persian_tools.controller.BMIActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.kotlin.persian_tools.controller.ChangeActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.kotlin.persian_tools.controller.CalculatorActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.kotlin.persian_tools.controller.SelectorActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.kotlin.persian_tools.controller.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
